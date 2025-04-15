@@ -25,6 +25,10 @@ app.get('/:unique_id', (req, res ) => {
     })
 })
 
+app.get('/', (req, res) => {
+    res.send('hello from instance');
+})
+
 
 app.listen(3000, () => {
     console.log('Server running on port', 3000)
