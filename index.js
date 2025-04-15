@@ -17,7 +17,7 @@ app.post('/url-short', (req, res) => {
 }) 
 
 app.get('/', (req, res) => {
-    res.send('hello from instance');
+    res.json({msg: 'Hello from the server'});
 })
 
 app.get('/:unique_id', (req, res ) => {
