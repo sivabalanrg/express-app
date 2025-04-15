@@ -16,6 +16,9 @@ app.post('/url-short', (req, res) => {
     )
 }) 
 
+app.get('/', (req, res) => {
+    res.send('hello from instance');
+})
 
 app.get('/:unique_id', (req, res ) => {
     let {unique_id} = req.params;
@@ -25,9 +28,6 @@ app.get('/:unique_id', (req, res ) => {
     })
 })
 
-app.get('/', (req, res) => {
-    res.send('hello from instance');
-})
 
 
 app.listen(3000, () => {
